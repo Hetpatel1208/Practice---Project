@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            width: 10cm;
+            height: 10cm;
+            background-color: aqua;
+           
+        }
+        button{
+            position: relative;
+            left: 3cm;
+            top: 0;
+        }
+         #b{
+            width: 10cm;
+            height: 10cm;
+            background-color: aqua;
+        }
+        button{
+            position: relative;
+            left: 3cm;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="f1(),f2()">Click Here</button>
+   
+    <div id="a"></div>
+    <div id="b"></div>
+    <script>
+        function f1() {
+            var k= document.getElementById('a').style
+            k.marginLeft="4cm"
+            k.marginTop="4cm"
+            k.backgroundImage="radial-gradient(red, blue)"
+            k.borderWidth="20px"
+            k.borderStyle="double"
+            k.borderColor="white"
+            k.borderRadius="0.25cm 10cm"
+            k.transition="transform 15s"
+            k.transform="rotate(360deg)"
+
+        }
+        function f2() {
+            var b= document.getElementById('b').style
+            b.marginLeft="30cm"
+            b.marginTop="-11cm"
+            b.backgroundImage="radial-gradient(red, blue)"
+            b.borderWidth="20px"
+            b.borderStyle="double"
+            b.borderColor="white"
+            b.borderRadius="0.25cm 10cm"
+            b.transition="transform 15s"
+            b.transform="rotate(360deg)"
+
+        }
+    </script>
+</body>
+</html>
